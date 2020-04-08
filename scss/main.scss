@@ -1,0 +1,83 @@
+@import"utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: $open;
+  color: $vdcyan;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header {
+  background-image: url('../images/bg-hero-desktop.svg');
+  background-size: cover;
+  background-position: center center;
+  background-color: $vpcyan;
+  padding: 40px 0;
+
+
+}
+
+footer {
+  color: #fff;
+  background-color: $vdcyan;
+
+}
+
+.btn {
+
+  &-secondary {
+    @extend%btn-shared;
+    color: $vdcyan;
+    padding: 10px 45px;
+    background-color: #fff;
+
+
+  }
+
+  &-prime {
+    @extend%btn-shared;
+    background-color: $pink;
+    color: #fff;
+
+
+  }
+
+}
+
+.grid-box {
+  @extend%grid-shared;
+  box-shadow: 0 0 5px rgba(0, 0, 1, .15);
+  border-radius: 15px;
+  margin: 40px 0;
+  padding: 60px 45px;
+
+  .illustration {
+    grid-area: 'ill';
+    max-width: 100%;
+
+    img {
+      max-width: 85%;
+    }
+
+  }
+
+  .content {
+    grid-area: 'content';
+    max-width: 100%;
+
+  }
+
+}
+
+
+
+
+footer .grid {
+  @extend%grid-shared;
+  grid-template-columns: 25% 25% 25% 25%;
+}

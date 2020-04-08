@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px; }
+
+.flex {
+  display: flex;
+  align-self: center;
+  justify-content: space-between; }
+
+.grid, .grid-box, footer .grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "ill content"; }
+
+.grid .illustration {
+  grid-area: 'ill';
+  max-width: 100%; }
+  .grid .illustration img {
+    width: 150%; }
+
+.grid .content {
+  grid-area: 'content';
+  max-width: 100%; }
+
+.btn-secondary, .btn-prime {
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 60px;
+  box-shadow: 0 0 5px rgba(0, 0, 1, 0.15); }
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e; }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  font-size: 18px;
+  line-height: 1.5; }
+
+header {
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-color: #ebfbff;
+  padding: 40px 0; }
+
+footer {
+  color: #fff;
+  background-color: #00252e; }
+
+.btn-secondary {
+  color: #00252e;
+  padding: 10px 45px;
+  background-color: #fff; }
+
+.btn-prime {
+  background-color: #ff52bf;
+  color: #fff; }
+
+.grid-box {
+  box-shadow: 0 0 5px rgba(0, 0, 1, 0.15);
+  border-radius: 15px;
+  margin: 40px 0;
+  padding: 60px 45px; }
+  .grid-box .illustration {
+    grid-area: 'ill';
+    max-width: 100%; }
+    .grid-box .illustration img {
+      max-width: 85%; }
+  .grid-box .content {
+    grid-area: 'content';
+    max-width: 100%; }
+
+footer .grid {
+  grid-template-columns: 25% 25% 25% 25%; }
