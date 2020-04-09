@@ -115,3 +115,7 @@ footer {
 
 footer .grid {
   grid-template-columns: 25% 25% 25% 25%; }
+
+@media (max-width: 414px) {
+  .grid, .grid-box, footer .grid {
+    grid-template-areas: "ill" "content"; } }

@@ -77,7 +77,7 @@ footer {
     padding: 35px;
 
 
-    h2{
+    h2 {
       line-height: 1.7;
 
 
@@ -87,17 +87,17 @@ footer {
 
 }
 
-.box-center{
-   background-color: #fff;
-   box-shadow: 0 0 5px rgba(0, 0, 1, .15);
-   border-radius: 15px;
-   margin: 40px 0;
-   padding: 60px;
-   display: inline-block;
-   position: relative;
-   z-index: 1;
-   margin-bottom: -120%;
-   padding: 40px 70px;
+.box-center {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 1, .15);
+  border-radius: 15px;
+  margin: 40px 0;
+  padding: 60px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -120%;
+  padding: 40px 70px;
 
 
 }
@@ -108,4 +108,11 @@ footer {
 footer .grid {
   @extend%grid-shared;
   grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media (max-width: 414px) {
+  %grid-shared {
+    grid-template-areas: "ill"
+      "content";
+  }
 }
