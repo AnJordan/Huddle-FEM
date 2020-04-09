@@ -26,25 +26,39 @@ sans-serif;
  %grid-shared {
    display: grid;
    grid-template-columns:50% 50% ;
-   grid-template-areas: "ill content";
+   grid-template-areas: "content ill ";
  }
 
  .grid{
    @extend%grid-shared;
+    margin: 40px 0;
+    padding: 60px 45px;
+
+
 
      .illustration {
-       grid-area: 'ill';
+       grid-area: ill;
        max-width: 100%;
+       margin-left: 20px;
+
+
 
        img {
-         width: 150%;
+         width: 100%;
+
        }
 
      }
 
      .content {
-       grid-area: 'content';
+       grid-area: content;
        max-width: 100%;
+       margin-right: 20px;
+       padding-top: 70px;
+
+       h1{
+         margin-bottom: 10px;
+       }
 
      }
  }
@@ -59,6 +73,10 @@ sans-serif;
     box-shadow: 0 0 5px rgba(0, 0, 1, .15);
  }
 
+ .center{
+   text-align: center;
+ }
+
 
 
  h1,
@@ -66,3 +84,5 @@ sans-serif;
    font-family: $poppins;
    color: $vdcyan;
  }
+
+//  navigation style

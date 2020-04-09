@@ -43,6 +43,7 @@ footer {
     @extend%btn-shared;
     background-color: $pink;
     color: #fff;
+    margin-top: 35px;
 
 
   }
@@ -54,23 +55,50 @@ footer {
   box-shadow: 0 0 5px rgba(0, 0, 1, .15);
   border-radius: 15px;
   margin: 40px 0;
-  padding: 60px 45px;
+  padding: 60px 25px;
 
   .illustration {
-    grid-area: 'ill';
+    grid-area: ill;
     max-width: 100%;
+    margin-left: 20px;
+    padding-left: 55px;
 
     img {
-      max-width: 85%;
+      max-width: 75%;
     }
 
   }
 
   .content {
-    grid-area: 'content';
+    grid-area: content;
     max-width: 100%;
+    margin-top: 45px;
+    margin-right: 20px;
+    padding: 35px;
+
+
+    h2{
+      line-height: 1.7;
+
+
+    }
 
   }
+
+}
+
+.box-center{
+   background-color: #fff;
+   box-shadow: 0 0 5px rgba(0, 0, 1, .15);
+   border-radius: 15px;
+   margin: 40px 0;
+   padding: 60px;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+   margin-bottom: -120%;
+   padding: 40px 70px;
+
 
 }
 
