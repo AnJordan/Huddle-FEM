@@ -43,6 +43,11 @@ footer {
     color: #fff;
     margin-top: 2.18rem;
   }
+
+  &-big{
+    font-size: 20px;
+    padding:20px 70px;
+  }
 }
 
 //  Grid Container Style
@@ -132,7 +137,7 @@ main {
   display: inline-block;
   position: relative;
   z-index: 1;
-  padding: 40px 70px;
+  padding: 60px 190px;
   transform: translateY(50%);
 }
 
@@ -143,6 +148,7 @@ footer {
     @extend%grid-shared;
     grid-template-columns: 25% 25% 25% 25%;
     padding: 0;
+
   }
 
   ul {
