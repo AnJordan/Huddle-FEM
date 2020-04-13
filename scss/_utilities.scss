@@ -11,8 +11,9 @@ sans-serif;
  $vdcyan: hsl(192, 100%, 9%);
  $gishblu: hsl(208, 11%, 55%);
 
+//  General styles
  .container{
-   padding: 0 30px;
+   padding: 0 1.8rem;
    margin: 0 auto;
    max-width: 100%;
    width: 1440px;
@@ -21,7 +22,16 @@ sans-serif;
    display: flex;
    align-self: center;
    justify-content: space-between;
+
+   img{
+     max-width: 75%;
+     width: auto;
+     height: 25px;
+
+   }
  }
+
+//  shared grid
 
  %grid-shared {
    display: grid;
@@ -29,48 +39,18 @@ sans-serif;
    grid-template-areas: "content ill ";
  }
 
- .grid{
-   @extend%grid-shared;
-    margin: 40px 0;
-    padding: 60px 45px;
 
 
-
-     .illustration {
-       grid-area: ill;
-       max-width: 100%;
-       margin-left: 20px;
-
-
-
-       img {
-         width: 100%;
-
-       }
-
-     }
-
-     .content {
-       grid-area: content;
-       max-width: 100%;
-       margin-right: 20px;
-       padding-top: 70px;
-
-       h1{
-         margin-bottom: 10px;
-       }
-
-     }
- }
+//  Shared btn style
 
  %btn-shared{
    border: none;
-   border-radius: 50px;
+   border-radius: 3.12rem;
    cursor: pointer;
     font-size: 14px;
     font-weight: 700;
-    padding: 15px 60px;
-    box-shadow: 0 0 5px rgba(0, 0, 1, .15);
+    padding: 1rem 3.75rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 1, .15);
  }
 
  .center{
@@ -85,4 +65,4 @@ sans-serif;
    color: $vdcyan;
  }
 
-//  navigation style
+
