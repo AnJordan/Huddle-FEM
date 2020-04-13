@@ -84,6 +84,9 @@ footer {
     .grid .content h1 {
       margin-bottom: 1rem; }
 
+main {
+  margin: 9.4rem 3rem 0; }
+
 .grid-box {
   box-shadow: 0 0 0.5rem rgba(0, 0, 1, 0.15);
   border-radius: 1.5rem;
